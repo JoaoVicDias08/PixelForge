@@ -1,0 +1,135 @@
+.services_title {
+  font-family: var(--font-inter);
+  font-size: 5rem;
+  font-weight: 800;
+  margin-top: 120px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(90deg, var(--primary), #38bdf8, var(--primary));
+  background-size: 200% 100%;
+  background-position: 0% 50%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  animation: gradientTitle 6s linear infinite alternate;
+}
+
+@keyframes gradientTitle {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+#services {
+  display: flex;
+  flex-direction: column; 
+  gap: 40px; 
+  padding: 40px 5%;
+  position: relative;
+}
+
+.services_img {
+  width: 27%;
+  height: auto;
+  margin-left: 0%;
+  margin-top: 4%;
+ 
+}
+
+.cards_and_img_wrapper {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap; 
+}
+
+.cards_container {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  gap: 20px;
+  min-width: 250px; 
+}
+
+.cards_container .card:nth-child(2),
+.cards_container .card:nth-child(4) {
+  margin-left: 8%;
+  width: 90%;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 15px 5px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  width: 90%;
+  box-sizing: border-box;
+  margin-left: 10%;
+}
+
+.card_title {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--card-title);
+  margin-left: 15px;
+}
+
+.card_desc {
+  font-family: var(--font-nunito);
+  font-size: 14px;
+  color: var(--text);
+  font-weight: 600;
+}
+
+@media (max-width: 450px) {
+  #services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    align-items: center;       
+    width: 100%;
+  }
+  .services_title {
+    font-size: 3rem;
+    margin: 0;
+    margin-top: 50px;
+    max-height: auto;
+  }
+  .services_img {
+    display: none;
+  }
+  .cards_container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 400px;
+}
+.card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  width: 90%;
+  box-sizing: border-box;
+  height: 80px;
+  max-width: 90%;
+  padding: 0;
+}
+.card_title {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--card-title);
+  margin-left: 10px;
+  margin-top: 1%;
+}
+.card_desc {
+  font-size: 14px;
+  color: var(--text);
+  font-weight: 600;
+  text-align: center;
+}
+}

@@ -1,0 +1,140 @@
+.about_cards_container {
+  position: absolute;
+  left: 10%;
+  top: 125%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  z-index: 2;
+}
+
+.about_card {
+  background: #18181b;
+  border-left: 4px solid var(--primary);
+  border-radius: 10px;
+  padding: 20px 28px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  width: 260px;
+}
+
+.about_card_title {
+  color: var(--primary);
+  font-size: 1.3rem;
+  font-family: var(--font-inter);
+  margin-bottom: 8px;
+}
+
+.about_card_text {
+  color: var(--text);
+  font-size: 1rem;
+  font-family: var(--font-raleway);
+  margin: 0;
+}
+
+.about_title {
+  font-size: 5rem;
+  color: var(--text);
+  font-family: var(--font-inter);
+  text-align: end;
+  position: relative;
+  right: 25%;
+  top: 35%;
+}
+
+.about_paragraph {
+  font-size: 1.5rem;
+  color: var(--text);
+  font-family: var(--font-raleway);
+  text-align: center;
+  width: 50%;
+  position: relative;
+  top: 33%;
+  left: 34%;
+}
+
+.about_paragraph:nth-child(3) {
+  margin-top: 1rem;
+}
+
+.about_text_color {
+  color: var(--primary);
+  margin-left: 1%;
+}
+
+.about_link_projects {
+  text-decoration: none;
+  color: var(--text);
+  font-family: var(--font-raleway);
+  font-size: 1.5rem;
+  background-color: var(--text);
+  color: var(--primary);
+  border-radius: 12px;
+  padding: 5px 8px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  position: relative;
+  top: 40%;
+  left: 54%;
+}
+
+.about_link_projects:hover {
+  color: var(--text);
+  background-color: var(--primary);
+}
+
+@media (max-width: 450px) {
+  #about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    align-items: center;       
+    width: 100%;
+  }
+  .about_title {
+    font-size: 2.9rem;
+    position: relative;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    padding: 0;
+  }
+  .about_paragraph {
+    font-size: 1.3rem;
+    width: 90%;
+    margin: 0 auto;
+    position: static;
+    top: 0;
+    left: 0;
+    bottom: 20px;
+    text-align: center;
+    min-height: 190px;
+    overflow: hidden;
+  }
+    .about_cards_container {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 95%;
+    align-items: center;
+    margin: 0 auto 18px auto;
+    z-index: 1;
+    margin-top: 15px;
+  }
+  .about_card {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 16px 10px;
+    max-height: auto;
+    overflow: hidden;
+  }
+  .about_link_projects {
+    position: relative;
+    margin: 0;
+    top: 0;
+    left: 0;
+  }
+}

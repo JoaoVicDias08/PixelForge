@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Port+Lligat+Slab&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+
+:root {
+  --primary: #2563EB; /* Azul vibrante - botões, links */
+  --dark: #0f0f0f; /* Preto profundo - fundo principal */
+  --accent: #1D4ED8; /* Azul legal */
+  --text: #f1f5f9; /* Texto claro - títulos e parágrafos */
+  --surface: #000; /* 	Preto grafite (escuro, mas com profundidade) */
+  --card-bg: #1A5276;
+  --card-bg-hover: #122d44; /* Fundo dos cards */
+  --card-title:#7ec8f5; /* Título dos cards */
+
+  /* Fontes */
+  --font-inter: "Inter", sans-serif; /* Fonte principal */
+  --font-raleway: "Raleway", sans-serif; /* Fonte secundária */
+  --font-port: "Port Lligat Slab", serif; /* Fonte para títulos */
+  --font-nunito: "Nunito", sans-serif; /* Fonte para textos gerais */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+   outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
