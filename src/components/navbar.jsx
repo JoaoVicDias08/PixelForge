@@ -30,7 +30,7 @@ function Navbar() {
             PixelForge
           </a>
          <img
-  src="/menu.png"
+  src={`${import.meta.env.BASE_URL}menu.png`}
   className={`navbar-menu-icon${menuOpen ? ' animate-out' : ' animate-in'}`}
   onClick={() => setMenuOpen(true)}
   alt="Abrir menu"
@@ -43,7 +43,7 @@ function Navbar() {
 
         <ul className={`navbar-menu${menuOpen ? ' active' : ''}`}>
           <img
-            src="/close.png"
+            src={`${import.meta.env.BASE_URL}close.png`}
             className="navbar-close-icon"
             onClick={() => setMenuOpen(false)}
             alt="Fechar menu"

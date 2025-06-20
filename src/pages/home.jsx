@@ -67,7 +67,7 @@ function Home() {
         </p>
 
         <img
-          src="/ilustration_home.svg"
+          src={`${import.meta.env.BASE_URL}ilustration_home.svg`}
           className="home_img"
           alt="Ilustração"
         />
@@ -126,7 +126,7 @@ function Home() {
 
         <div className="cards_and_img_wrapper">
           <img
-            src="/coding_ilustration.svg"
+            src={`${import.meta.env.BASE_URL}coding_ilustration.svg`}
             className="services_img"
             data-aos="zoom-in-left"
           />
